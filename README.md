@@ -56,9 +56,9 @@ npm install
 Create a `.env` file in the project root:
 
 ```env
-DATABASE_URL=your_postgresql_database_url
-JWT_SECRET=your_secret_key
-GROQ_API_KEY=your_groq_api_key
+DATABASE_URL_POSTGRES: postgresql://postgres:jqaQmzS0jS0eoEPX@db.abmwcwdftpwamlirvzhw.supabase.co:5432/postgres
+GROQ_API_KEY="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"
+JWT_SECRET="super-secret-taskflow-jwt-key-change-in-production"
 ```
 
 ### Prisma Setup
@@ -69,12 +69,6 @@ npx prisma db push
 ```
 
 ### Run Development Server
-
-```bash
-pnpm dev
-```
-
-or
 
 ```bash
 npm run dev
