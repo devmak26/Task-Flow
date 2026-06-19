@@ -26,7 +26,7 @@ TaskFlow Pro is a modern AI-powered task management application built with Next.
 * Groq AI API
 * JWT Authentication
 * Tailwind CSS
-* Vercel
+
 
 ## Installation
 
@@ -79,10 +79,6 @@ or
 ```bash
 npm run dev
 ```
-
-Open:
-
-http://localhost:3000
 
 ## Project Structure
 
