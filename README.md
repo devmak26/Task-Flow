@@ -72,23 +72,55 @@ npx prisma db push
 ### Run Development Server
 
 ```bash
-npm run dev
+Using pnpm:
+           pnpm install
+
+Using npm:
+           npm install
+
 ```
 
 ## Project Structure
 
 ```text
-app/
-├── api/
-├── auth/
-├── components/
-├── actions.ts
-├── page.tsx
-
-lib/
-├── auth.ts
-├── prisma.ts
-
-prisma/
-├── schema.prisma
+taskflow-pro/
+│
+├── app/
+│   ├── api/
+│   │   ├── ai/
+│   │   │   └── route.ts
+│   │   │
+│   │   └── auth/
+│   │       └── route.ts
+│   │
+│   ├── auth/
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── AddTaskForm.tsx
+│   │   ├── TaskCard.tsx
+│   │   └── TaskList.tsx
+│   │
+│   ├── actions.ts
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── lib/
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── public/
+│
+├── .env
+│
+├── package.json
+├── pnpm-lock.yaml
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+└── eslint.config.mjs
 ```
+
