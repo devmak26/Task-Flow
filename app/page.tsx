@@ -3,6 +3,7 @@ import TaskList from "./components/TaskList";
 import { prisma } from "@/lib/prisma";
 import { getCurrentUser } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import type { Task } from "@prisma/client";
 
 export default async function Home({
   searchParams,
@@ -41,7 +42,7 @@ export default async function Home({
   });
 
   const completedCount = tasks.filter(
-    (task) => task.completed
+    (task: Task) => task.completed
   ).length;
 
   const pendingCount = tasks.length - completedCount;
